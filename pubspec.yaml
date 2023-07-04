@@ -1,0 +1,28 @@
+name: quran_app
+version: 1.0.0+1
+publish_to: none
+description: A new Flutter project.
+environment:
+  sdk: ">=2.19.6 <3.0.0"
+
+dependencies:
+  audioplayers: ^4.0.1
+  cupertino_icons: ^1.0.2
+  flutter:
+    sdk: flutter
+  flutter_native_splash: ^2.2.19
+  get: 4.6.5
+  get_storage: ^2.1.1
+  skeletons: ^0.0.3
+
+dev_dependencies:
+  flutter_lints: ^2.0.0
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/images/
+    - assets/icons/
