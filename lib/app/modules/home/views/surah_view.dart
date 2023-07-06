@@ -55,24 +55,28 @@ class SurahView extends GetView<HomeController> {
               ),
             );
           }),
-      onLoading: ListView.builder(
-        itemCount: 10,
-        itemBuilder: (BuildContext context, int index) {
-          return Flex(
-            direction: Axis.vertical,
-            children: [
-              SkeletonLine(
-                style: SkeletonLineStyle(
-                    height: 60,
-                    width: double.infinity,
-                    borderRadius: BorderRadius.circular(4)),
-              ),
-              SizedBox(
-                height: 15,
-              )
-            ],
-          );
-        },
+      onLoading: Container(
+        padding: EdgeInsets.only(left: 15, right: 15),
+        height: double.maxFinite,
+        child: ListView.builder(
+          itemCount: 10,
+          itemBuilder: (BuildContext context, int index) {
+            return Flex(
+              direction: Axis.vertical,
+              children: [
+                SkeletonLine(
+                  style: SkeletonLineStyle(
+                      height: 60,
+                      width: double.infinity,
+                      borderRadius: BorderRadius.circular(4)),
+                ),
+                SizedBox(
+                  height: 15,
+                )
+              ],
+            );
+          },
+        ),
       ),
     );
   }

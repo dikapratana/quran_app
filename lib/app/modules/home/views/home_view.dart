@@ -46,18 +46,18 @@ class HomeView extends GetView<HomeController> {
           child: RefreshIndicator(
         onRefresh: _refresh,
         child: SingleChildScrollView(
-          child: Flex(
-            direction: Axis.vertical,
+          child: Column(
             children: [
               Container(
                 color: Colors.white,
+                height: 280,
                 padding: const EdgeInsets.all(15),
                 child: Flex(
                   direction: Axis.vertical,
                   children: const [GreetingWidget(), BannerHomeWidget()],
                 ),
               ),
-              const SurahView()
+              SurahView(),
             ],
           ),
         ),

@@ -46,7 +46,7 @@ class LoginView extends GetView {
                 children: [
                   Image.asset('assets/images/login.png'),
                   Positioned(
-                    bottom: -15,
+                    bottom: 16,
                     left: 0,
                     right: 0,
                     child: Padding(

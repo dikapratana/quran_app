@@ -42,7 +42,7 @@ class DetailSurah extends GetView<DetailSurahController> {
                     Stack(
                       children: [
                         Container(
-                          height: 150,
+                          height: 170,
                           decoration: const BoxDecoration(
                               borderRadius: BorderRadius.all(
                                 Radius.circular(20),
@@ -70,7 +70,7 @@ class DetailSurah extends GetView<DetailSurahController> {
                         Container(
                           padding: const EdgeInsets.all(15),
                           width: double.infinity,
-                          height: 150,
+                          height: 170,
                           child: Flex(
                             crossAxisAlignment: CrossAxisAlignment.center,
                             mainAxisAlignment: MainAxisAlignment.center,
